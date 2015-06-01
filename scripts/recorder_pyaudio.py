@@ -6,9 +6,9 @@ CHUNK = 1024
 FORMAT = pyaudio.paInt16 #paInt8
 CHANNELS = 1 
 RATE = 16000 #sample rate
-RECORD_SECONDS = 5
+RECORD_SECONDS = 3
 ticks = time.time()
-WAVE_OUTPUT_FILENAME = "../wav/output_" + str(ticks) + ".wav"
+WAVE_OUTPUT_FILENAME = "../wav/output.wav"
 
 p = pyaudio.PyAudio()
 

@@ -1,4 +1,4 @@
-import wave
+import wave,time
 import wave,struct,numpy,numpy.fft
 import scipy.signal#,matplotlib.pyplot
 
@@ -59,6 +59,7 @@ def main():
     sig,fs = read_wave(wavefilename)
     average_energy = energy_calculator(sig,fs)
     print average_energy
+    time.sleep(5)
 
 if __name__ == '__main__':
      main()
